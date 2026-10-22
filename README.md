@@ -125,3 +125,12 @@ assets/
 - The contact details and hours are taken from the existing menu material. Update
   `menu-data.js` and the footer if they change.
 - This is a standalone project built for Laxmi’s Kitchen.
+
+## Access 
+Link to access
+
+https://sarinkaavya19-ai.github.io/Laxmi-s-Kitchen/
+
+Qr for the menu 
+
+<img width="656" height="656" alt="laxmis-kitchen-qr" src="https://github.com/user-attachments/assets/86525cfc-4fdb-4685-801d-e93b30510c1c" />
