@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QR &amp; Table Card — Laxmi’s Kitchen</title>
+    <meta
+      name="description"
+      content="Create a printable QR table card for the Laxmi’s Kitchen e-menu."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#183d2b" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/fraunces-normal-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/qr.css" />
+    <script src="assets/js/qrcode.js" defer></script>
+    <script src="assets/js/qr.js" defer></script>
+  </head>
+
+  <body class="qr-page">
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+          <path d="M19.2 12H4.8" />
+          <path d="m10.6 5.8-6.2 6.2 6.2 6.2" />
+        </symbol>
+        <symbol id="icon-link" viewBox="0 0 24 24">
+          <path d="M10.2 13.8a4.6 4.6 0 0 0 6.5 0l2.6-2.6a4.6 4.6 0 0 0-6.5-6.5l-1.4 1.4" />
+          <path d="M13.8 10.2a4.6 4.6 0 0 0-6.5 0l-2.6 2.6a4.6 4.6 0 0 0 6.5 6.5l1.4-1.4" />
+        </symbol>
+        <symbol id="icon-printer" viewBox="0 0 24 24">
+          <path d="M7 8V3.8h10V8" />
+          <rect x="3.5" y="8" width="17" height="8.2" rx="2" />
+          <path d="M7 13h10v7.2H7z" />
+        </symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24">
+          <path d="M12 3.5v11.2" />
+          <path d="m7.2 10 4.8 4.8 4.8-4.8" />
+          <path d="M4.8 20.2h14.4" />
+        </symbol>
+        <symbol id="icon-leaf" viewBox="0 0 24 24">
+          <path d="M20.5 3.8C10.4 4.3 4.7 9 4.2 19.5c9.8.6 15.5-4.7 16.3-15.7Z" />
+          <path d="M4.7 19.3C8.4 14.2 12.6 10.2 18 6.8" />
+        </symbol>
+        <symbol id="leaf-branch" viewBox="0 0 240 240">
+          <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none">
+            <path d="M16 224C52 160 106 102 216 36" />
+            <path d="M82 140c-27-4-45-24-44-51 27 0 46 17 50 44" />
+            <path d="M116 103c-2-26 11-47 34-57 5 25-5 45-29 58" />
+            <path d="M70 159c2 24-11 43-34 50-4-24 8-43 31-51" />
+            <path d="M154 74c10 20 3 40-16 53-10-20-2-40 15-53" />
+            <path d="M164 54c26-2 47 12 54 36-25 6-46-7-55-31" />
+            <path d="M38 201c-20 4-37-3-47-21 19-9 38-3 50 17" />
+            <path d="M111 165c-19 14-40 12-55-5 17-15 38-13 54 4" />
+            <path d="M126 143c21-3 38 8 43 28-22 4-39-6-45-25" />
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="qr-header">
+      <div class="container">
+        <a class="brand" href="index.html" aria-label="Laxmi’s Kitchen — back to the menu">
+          <span class="brand__mark" aria-hidden="true">LK</span>
+          <span class="brand__text">
+            <strong>Laxmi’s Kitchen</strong>
+            <small>Home-style vegetarian</small>
+          </span>
+        </a>
+        <a class="qr-back" href="index.html">
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"></use></svg>
+          Back to menu
+        </a>
+      </div>
+    </header>
+
+    <main class="qr-main">
+      <div class="container qr-layout">
+        <section class="qr-intro" aria-labelledby="qr-title">
+          <p class="eyebrow">Menu access</p>
+          <h1 id="qr-title">One scan, and the menu is <em>on the table.</em></h1>
+          <p>
+            Add your published menu link, then print the card or download the QR
+            code for table tents, takeaway bags and Instagram.
+          </p>
+
+          <div class="qr-controls">
+            <label for="qr-url">Published menu link</label>
+            <div class="qr-input-wrap">
+              <svg class="icon" aria-hidden="true"><use href="#icon-link"></use></svg>
+              <input
+                type="url"
+                id="qr-url"
+                name="qr-url"
+                inputmode="url"
+                autocomplete="url"
+                spellcheck="false"
+                placeholder="https://your-name.github.io/laxmis-kitchen/"
+              />
+            </div>
+            <p class="qr-url-error" id="qr-url-error" role="alert"></p>
+
+            <div class="qr-buttons">
+              <button class="btn btn--primary" type="button" id="qr-print">
+                <svg class="icon" aria-hidden="true"><use href="#icon-printer"></use></svg>
+                Print card
+              </button>
+              <button class="btn btn--outline" type="button" id="qr-png">
+                <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+                PNG
+              </button>
+              <button class="btn btn--outline" type="button" id="qr-svg">
+                <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+                SVG
+              </button>
+            </div>
+
+            <p class="qr-status" id="qr-status" role="status" aria-live="polite"></p>
+            <p class="qr-hint">
+              <strong>Tip:</strong> print on thick cream paper, or place the card in
+              an A5 frame. The QR code is generated in your browser — nothing is
+              uploaded anywhere.
+            </p>
+          </div>
+        </section>
+
+        <section class="qr-card" aria-label="Printable QR table card">
+          <div class="qr-card__top">
+            <span class="brand__mark" aria-hidden="true">LK</span>
+            <div>
+              <strong>Laxmi’s Kitchen</strong>
+              <span class="qr-card__tagline">Home-style vegetarian</span>
+            </div>
+          </div>
+
+          <div class="qr-card__body">
+            <p class="qr-card__eyebrow">Scan for our menu</p>
+            <div class="qr-code" id="qr-code"></div>
+            <p class="qr-card__url" id="qr-url-label">laxmis-kitchen</p>
+            <p class="qr-card__meta">Pure vegetarian · Ambegaon Bk, Pune</p>
+          </div>
+
+          <div class="qr-card__footer">
+            <span>Open daily · 9:00 AM – 9:30 PM</span>
+            <span class="qr-card__phone">+91 85914 24627</span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="qr-page-footer">
+      <div class="container">
+        <span>Laxmi’s Kitchen · Ambegaon Bk, Pune</span>
+        <a href="index.html">Back to the menu →</a>
+      </div>
+    </footer>
+  </body>
+</html>

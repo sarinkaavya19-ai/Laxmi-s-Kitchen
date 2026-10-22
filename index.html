@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laxmi’s Kitchen — Home-style Vegetarian Menu | Ambegaon, Pune</title>
+    <meta
+      name="description"
+      content="Laxmi’s Kitchen is a home-style vegetarian kitchen in Ambegaon Bk, Pune. Explore our menu of fresh snacks, thalis, paneer specials, rice and breads. Tiffin service available."
+    />
+    <meta name="theme-color" content="#183d2b" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/fraunces-normal-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/dm-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/images/menu/veg-thali.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Laxmi’s Kitchen — Home-style Vegetarian Menu" />
+    <meta
+      property="og:description"
+      content="Simple food, beautifully homemade. Fresh vegetarian snacks, thalis, paneer specials, rice and breads in Ambegaon Bk, Pune."
+    />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Laxmi’s Kitchen — Home-style Vegetarian Menu" />
+    <meta
+      name="twitter:description"
+      content="Simple food, beautifully homemade. Fresh vegetarian food in Ambegaon Bk, Pune."
+    />
+    <meta name="twitter:image" content="assets/images/og-cover.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Laxmi’s Kitchen",
+        "description": "Home-style vegetarian kitchen in Ambegaon Bk, Pune. Fresh snacks, thalis, paneer specials, rice and breads. Tiffin service available.",
+        "servesCuisine": ["Indian", "Vegetarian", "Home-style"],
+        "priceRange": "₹10–₹200",
+        "telephone": "+91 85914 24627",
+        "email": "sharmaarchana72503@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "A 1105, The Pavilion, Near Chintamani Dyanpeeth School, Opp. Pawar Furniture, Ambegaon Bk",
+          "addressLocality": "Pune",
+          "postalCode": "411046",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "09:00",
+            "closes": "21:30"
+          }
+        ],
+        "hasMenu": "#menu",
+        "acceptsReservations": "False"
+      }
+    </script>
+
+    <script src="assets/js/menu-data.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+
+  <body>
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-leaf" viewBox="0 0 24 24">
+          <path d="M20.5 3.8C10.4 4.3 4.7 9 4.2 19.5c9.8.6 15.5-4.7 16.3-15.7Z" />
+          <path d="M4.7 19.3C8.4 14.2 12.6 10.2 18 6.8" />
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="8.6" />
+          <path d="M12 7.4v4.9l3.2 2" />
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24">
+          <path d="M12 21.2s6.9-6.1 6.9-11.1a6.9 6.9 0 1 0-13.8 0c0 5 6.9 11.1 6.9 11.1Z" />
+          <circle cx="12" cy="9.9" r="2.5" />
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+          <path
+            d="M6.6 3.4h2.8l1.4 3.8-1.9 1.4a12.4 12.4 0 0 0 5.9 5.9l1.4-1.9 3.8 1.4v2.8a2 2 0 0 1-2.2 2A16.4 16.4 0 0 1 4.6 5.6a2 2 0 0 1 2-2.2Z"
+          />
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5.2" width="18" height="13.6" rx="2.2" />
+          <path d="m4 7 8 5.6L20 7" />
+        </symbol>
+        <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+          <path d="M12 4.8v14.4" />
+          <path d="m6.2 13.4 5.8 5.8 5.8-5.8" />
+        </symbol>
+        <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+          <path d="M12 19.2V4.8" />
+          <path d="m6.2 10.6 5.8-5.8 5.8 5.8" />
+        </symbol>
+        <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+          <path d="M7 17 17 7" />
+          <path d="M8.2 7H17v8.8" />
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 24 24">
+          <circle cx="10.8" cy="10.8" r="6.8" />
+          <path d="m15.8 15.8 4.4 4.4" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+          <path d="m4.4 12.6 4.8 4.8 10.4-11" />
+        </symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24">
+          <path d="m12 3.2 2.5 6.4 6.7.5-5.1 4.4 1.6 6.7L12 17.6l-5.7 3.6 1.6-6.7-5.1-4.4 6.7-.5L12 3.2Z" />
+        </symbol>
+        <symbol id="icon-printer" viewBox="0 0 24 24">
+          <path d="M7 8V3.8h10V8" />
+          <rect x="3.5" y="8" width="17" height="8.2" rx="2" />
+          <path d="M7 13h10v7.2H7z" />
+        </symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24">
+          <path d="M12 3.5v11.2" />
+          <path d="m7.2 10 4.8 4.8 4.8-4.8" />
+          <path d="M4.8 20.2h14.4" />
+        </symbol>
+        <symbol id="leaf-branch" viewBox="0 0 240 240">
+          <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none">
+            <path d="M16 224C52 160 106 102 216 36" />
+            <path d="M82 140c-27-4-45-24-44-51 27 0 46 17 50 44" />
+            <path d="M116 103c-2-26 11-47 34-57 5 25-5 45-29 58" />
+            <path d="M70 159c2 24-11 43-34 50-4-24 8-43 31-51" />
+            <path d="M154 74c10 20 3 40-16 53-10-20-2-40 15-53" />
+            <path d="M164 54c26-2 47 12 54 36-25 6-46-7-55-31" />
+            <path d="M38 201c-20 4-37-3-47-21 19-9 38-3 50 17" />
+            <path d="M111 165c-19 14-40 12-55-5 17-15 38-13 54 4" />
+            <path d="M126 143c21-3 38 8 43 28-22 4-39-6-45-25" />
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <a class="skip-link" href="#menu">Skip to the menu</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Laxmi’s Kitchen — back to top">
+          <span class="brand__mark" aria-hidden="true">LK</span>
+          <span class="brand__text">
+            <strong>Laxmi’s Kitchen</strong>
+            <small>Home-style vegetarian</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#featured">Favourites</a>
+          <a href="#menu">Menu</a>
+          <a href="#visit">Visit</a>
+        </nav>
+
+        <div class="header-contact">
+          <span class="header-contact__line">sharmaarchana72503@gmail.com</span>
+          <span class="header-contact__line header-contact__phone">+91 85914 24627</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <svg class="leaf-art leaf-art--hero" aria-hidden="true">
+          <use href="#leaf-branch"></use>
+        </svg>
+
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="hero__kicker">
+              <svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+              Home-style vegetarian · Pune
+            </p>
+
+            <h1 id="hero-title">
+              Simple food.<br />
+              <em>Beautifully homemade.</em>
+            </h1>
+
+            <p class="hero__lead">
+              Fresh vegetarian food made in small batches, with familiar spices,
+              honest ingredients and the warmth of home.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#menu">
+                Explore our menu
+                <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down"></use></svg>
+              </a>
+              <span class="contact-card contact-card--outline">
+                <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+                <span>+91 85914 24627</span>
+              </span>
+            </div>
+
+            <div class="hero__trust">
+              <span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+                100% vegetarian
+              </span>
+              <span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+                No preservatives
+              </span>
+              <span>
+                <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+                Tiffin available
+              </span>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero-gallery">
+              <figure class="hero-card hero-card--tall">
+                <img
+                  src="assets/images/menu/veg-thali.webp"
+                  alt="A home-style vegetarian thali with rice, rotis, dal and seasonal vegetables"
+                  width="480"
+                  height="480"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+                <figcaption>
+                  <span>The Homestyle Thali</span>
+                  <strong>₹100</strong>
+                </figcaption>
+              </figure>
+
+              <figure class="hero-card">
+                <img
+                  src="assets/images/menu/idli-sambhar.webp"
+                  alt="Soft idlis served with sambhar and coconut chutney"
+                  width="480"
+                  height="480"
+                  decoding="async"
+                />
+                <figcaption>
+                  <span>Idli Sambhar</span>
+                  <strong>₹50</strong>
+                </figcaption>
+              </figure>
+
+              <figure class="hero-card">
+                <img
+                  src="assets/images/menu/paneer-kadhai.webp"
+                  alt="Paneer kadhai with peppers in a rich tomato gravy"
+                  width="480"
+                  height="480"
+                  decoding="async"
+                />
+                <figcaption>
+                  <span>Paneer Kadhai</span>
+                  <strong>₹200</strong>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="hero-seal" aria-hidden="true">
+              <svg class="icon"><use href="#icon-leaf"></use></svg>
+              <strong>100%</strong>
+              <span>Vegetarian</span>
+            </div>
+
+            <p class="hero__caption">Freshly prepared, every day</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info strip -->
+      <div class="info-strip">
+        <div class="container info-strip__inner">
+          <span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <span><strong>Open daily</strong> 9:00 AM – 9:30 PM</span>
+          </span>
+          <span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+            Pure vegetarian kitchen
+          </span>
+          <span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+            Ambegaon Bk, Pune
+          </span>
+          <span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <strong>+91 85914 24627</strong>
+          </span>
+        </div>
+      </div>
+
+      <!-- Featured -->
+      <section class="section featured" id="featured" aria-labelledby="featured-title">
+        <div class="container">
+          <header class="section-head">
+            <div>
+              <p class="eyebrow">From our kitchen</p>
+              <h2 id="featured-title">Today’s favourites</h2>
+            </div>
+            <p class="section-head__note">
+              Familiar flavours that always feel like home.
+            </p>
+          </header>
+
+          <div class="featured-grid" id="featured-grid"></div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section class="section menu" id="menu" aria-labelledby="menu-title">
+        <div class="container">
+          <div class="menu-intro">
+            <div class="menu-intro__copy">
+              <p class="eyebrow">Our complete menu</p>
+              <h2 id="menu-title">Good food, no fuss.</h2>
+              <p>
+                Everything is vegetarian and prepared fresh in our home kitchen.
+                Prices include taxes.
+              </p>
+            </div>
+
+            <div class="menu-tools">
+              <label class="search" for="menu-search">
+                <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+                <input
+                  type="search"
+                  id="menu-search"
+                  name="menu-search"
+                  placeholder="Search dishes…"
+                  aria-label="Search the menu"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+                <kbd aria-hidden="true">/</kbd>
+                <button
+                  class="search__clear"
+                  type="button"
+                  id="search-clear"
+                  aria-label="Clear search"
+                >
+                  <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+                </button>
+              </label>
+              <p class="menu-count" id="menu-count" aria-live="polite">35 dishes</p>
+            </div>
+          </div>
+
+          <nav class="category-nav" id="category-nav" aria-label="Menu categories"></nav>
+
+          <div class="menu-groups" id="menu-groups"></div>
+
+          <div class="menu-empty" id="menu-empty" hidden>
+            <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+            <h3>No dishes found</h3>
+            <p>Try another name, or clearly search for a category like “paneer”.</p>
+            <button class="btn btn--outline btn--small" type="button" id="empty-clear">
+              Clear search
+            </button>
+          </div>
+
+          <noscript>
+            <p style="margin-top: 2rem; font-size: 0.95rem">
+              Our interactive menu needs JavaScript. Please call
+              <strong>+91 85914 24627</strong> to order, or ask us for a printed menu.
+            </p>
+          </noscript>
+        </div>
+      </section>
+
+      <!-- Tiffin -->
+      <div class="tiffin-wrap">
+        <div class="container">
+          <section class="tiffin" aria-labelledby="tiffin-title">
+            <svg class="leaf-art" aria-hidden="true"><use href="#leaf-branch"></use></svg>
+            <div class="tiffin__copy">
+              <p class="eyebrow eyebrow--light">Daily meals</p>
+              <h2 id="tiffin-title">Tiffin, made like home.</h2>
+              <p>
+                Fresh, balanced vegetarian meals for your everyday routine. Call us
+                to start your tiffin — we’ll take care of the rest.
+              </p>
+            </div>
+            <div class="tiffin__actions">
+              <span class="contact-card contact-card--cream">
+                <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+                <span>+91 85914 24627</span>
+              </span>
+              <span class="contact-card contact-card--ghost-light contact-card--email">
+                <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+                <span>sharmaarchana72503@gmail.com</span>
+              </span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="visit">
+      <svg class="leaf-art" aria-hidden="true"><use href="#leaf-branch"></use></svg>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="brand__mark brand__mark--light" aria-hidden="true">LK</span>
+            <h2>Laxmi’s Kitchen</h2>
+            <p>Home-cooked with care, from our kitchen to your table.</p>
+            <span class="footer-tag">
+              <svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+              Pure vegetarian kitchen
+            </span>
+          </div>
+
+          <div class="footer-col">
+            <h3>Visit</h3>
+            <address>
+              A 1105, The Pavilion, Near Chintamani Dyanpeeth School,
+              Opp. Pawar Furniture, Ambegaon Bk, Pune 411046, Maharashtra
+            </address>
+          </div>
+
+          <div class="footer-col">
+            <h3>Hours</h3>
+            <p>Open daily<br /><strong>9:00 AM – 9:30 PM</strong></p>
+            <h3 class="footer-spaced">Call</h3>
+            <span class="footer-contact">+91 85914 24627</span>
+            <span class="footer-contact footer-email">sharmaarchana72503@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> Laxmi’s Kitchen</span>
+          <span>Prices are in INR and inclusive of taxes</span>
+          <span>Photographs are representative of our dishes</span>
+          <span class="footer-credit">Made by <strong>KLN Business Solutions</strong></span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" id="to-top" aria-label="Back to top" title="Back to top">
+      <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+    </button>
+
+  </body>
+</html>
