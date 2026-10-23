@@ -26,7 +26,7 @@ window.LAXMI_MENU = {
 
   featured: [
     { slug: "veg-thali", note: "A little bit of everything" },
-    { slug: "idli-sambhar", note: "Soft, warm & comforting" },
+    { slug: "samosa", note: "Crisp, golden & freshly fried" },
     { slug: "paneer-kadhai", note: "Bold house-made masala" }
   ],
 
@@ -62,13 +62,6 @@ window.LAXMI_MENU = {
           name: "Poha",
           price: "40",
           description: "Lightly tempered with peanuts and lemon."
-        },
-        {
-          slug: "idli-sambhar",
-          name: "Idli Sambhar",
-          price: "50",
-          description: "Steamed rice cakes, lentil sambhar and house chutney.",
-          popular: true
         },
         {
           slug: "veg-sandwich",

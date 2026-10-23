@@ -7,7 +7,7 @@ be published directly on GitHub Pages and opened from a QR code.
 ## What’s inside
 
 - Warm editorial design with self-hosted Fraunces + DM Sans fonts
-- 35 dishes with a photo, name, short description and price
+- 34 dishes with a photo, name, short description and price
 - Category navigation with scroll spy, live search, and “house favourite” tags
 - Featured dishes, tiffin callout, opening hours, phone, email and address
 - Keyboard search (`/`), reduced-motion support, print styles
@@ -53,21 +53,21 @@ Recommended specs:
 - Export as WebP (quality ~82) or JPG (quality ~85)
 - Keep the same file names in `assets/images/menu/`
 
-The 35 file names are:
+The 34 file names are:
 
 ```
 bread-pakoda        vada-paav           samosa              poha
-idli-sambhar        veg-sandwich        veg-grilled-sandwich veg-hakka-noodles
-veg-manchurian      veg-chilli-paneer   puri-bhaji          paav-bhaji
-veg-thali           veg-biryani         dal-fry             dal-tadka
-aloo-matar          aloo-palak          bhindi-masala       bhindi-fry
-aloo-jeera          mix-veg             veg-kadhai          paneer-kadhai
-shahi-paneer        palak-paneer        paneer-bhurji       paneer-do-pyaza
-wheat-roti          butter-wheat-roti   jeera-rice          veg-pulao
-paneer-pulao        steam-rice          dal-khichdi
+veg-sandwich        veg-grilled-sandwich veg-hakka-noodles  veg-manchurian
+veg-chilli-paneer   puri-bhaji          paav-bhaji          veg-thali
+veg-biryani         dal-fry             dal-tadka           aloo-matar
+aloo-palak          bhindi-masala       bhindi-fry          aloo-jeera
+mix-veg             veg-kadhai          paneer-kadhai       shahi-paneer
+palak-paneer        paneer-bhurji       paneer-do-pyaza     wheat-roti
+butter-wheat-roti   jeera-rice          veg-pulao           paneer-pulao
+steam-rice          dal-khichdi
 ```
 
-> The featured-row images are `veg-thali.webp`, `idli-sambhar.webp` and
+> The featured-row images are `veg-thali.webp`, `samosa.webp` and
 > `paneer-kadhai.webp`.
 
 If a photo is missing, the browser will show the dish name as the image alt text; the
@@ -112,7 +112,7 @@ assets/
   js/qr.js                  QR generation
   js/qrcode.js              Vendored QR library (MIT)
   fonts/                    Self-hosted Fraunces + DM Sans
-  images/menu/              Dish photos (35 WebP files)
+  images/menu/              Dish photos (34 WebP files)
   images/og-cover.jpg       Social preview image
   favicon.svg               LK favicon
 .github/workflows/deploy.yml
